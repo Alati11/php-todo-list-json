@@ -4,35 +4,14 @@ createApp({
     data() {
         return {
             message: "Lista di cose da fare",
-            todos:[
-                // {
-                // 'text': 'HTML',
-                // 'done' :true,
-                // },
-                // {
-                // 'text' : 'CSS',
-                // 'done' : true,
-                // },
-                // {
-                // 'text' : 'JavaScript',
-                // 'done' : true,
-                // },
-                // {
-                // 'text' : 'PHP',
-                // 'done' : false,
-                // },
-                // {
-                // 'text' : 'Python',
-                // 'done' : false,
-                // }
-            ]
+            todos:[ ],  
         }
     },
     methods: {
 		fetchData() {
-			axios.get('server.php').then((res) => {
-				console.log(res.data.results)
-				this.todos.todo = res.data.results
+			axios.get('./server.php').then((res) => {
+				// console.log(res.data.text)
+				this.todos = res.data.text  
 			})
 		},
 	},
