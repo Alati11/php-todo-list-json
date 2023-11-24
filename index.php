@@ -24,7 +24,10 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li v-for="(todo, i) in todos" :key="i">{{ todo.text }}</li>
+                        <li v-for="(todo, i) in todos" :key="i">
+                            <h3 class="title-todo">{{ todo.text }}</h3>
+                            <p class="done">{{ todo.done }}</p>
+                        </li>
                     </ul>
                  </div>
             </section>

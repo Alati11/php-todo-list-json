@@ -12,3 +12,11 @@ section {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+.done {
+	display: inline;
+}
+
+.title-todo {
+	display: inline;
+}

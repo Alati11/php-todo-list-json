@@ -5,27 +5,26 @@ createApp({
         return {
             message: "Lista di cose da fare",
             todos:[
-                {
-                'text': 'HTML',
-                'done' :false,
-                },
-                {
-                'text' : 'CSS',
-                'done' : false,
-                },
-                {
-                'text' : 'JavaScript',
-                'done' : true,
-                },
-                {
-                'text' : 'PHP',
-                'done' : true,
-                },
-                {
-                'text' : 'Python',
-                'done' : false,
-                }
-                
+                // {
+                // 'text': 'HTML',
+                // 'done' :true,
+                // },
+                // {
+                // 'text' : 'CSS',
+                // 'done' : true,
+                // },
+                // {
+                // 'text' : 'JavaScript',
+                // 'done' : true,
+                // },
+                // {
+                // 'text' : 'PHP',
+                // 'done' : false,
+                // },
+                // {
+                // 'text' : 'Python',
+                // 'done' : false,
+                // }
             ]
         }
     },
