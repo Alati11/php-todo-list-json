@@ -1,0 +1,33 @@
+const { createApp } = Vue
+
+createApp({
+    data() {
+        return {
+            message: "Lista di cose da fare",
+            todos:[
+                {
+                'text': 'PHP',
+                'done' :false,
+                },
+                {
+                'text' : 'JavaScript',
+                'done' : false,
+                },
+                {
+                'text' : 'HTML',
+                'done' : true,
+                },
+                {
+                'text' : 'CSS',
+                'done' : true,
+                },
+                {
+                'text' : 'Python',
+                'done' : false,
+                }
+                
+            ]
+        }
+    },
+
+}).mount('#app')
