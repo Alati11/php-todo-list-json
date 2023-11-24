@@ -6,19 +6,19 @@ createApp({
             message: "Lista di cose da fare",
             todos:[
                 {
-                'text': 'PHP',
+                'text': 'HTML',
                 'done' :false,
                 },
                 {
-                'text' : 'JavaScript',
+                'text' : 'CSS',
                 'done' : false,
                 },
                 {
-                'text' : 'HTML',
+                'text' : 'JavaScript',
                 'done' : true,
                 },
                 {
-                'text' : 'CSS',
+                'text' : 'PHP',
                 'done' : true,
                 },
                 {
@@ -29,5 +29,16 @@ createApp({
             ]
         }
     },
+    methods: {
+		fetchData() {
+			axios.get('server.php').then((res) => {
+				console.log(res.data.results)
+				this.todos.todo = res.data.results
+			})
+		},
+	},
+	created() {
+		this.fetchData()
+	},
 
 }).mount('#app')
