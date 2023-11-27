@@ -26,9 +26,13 @@ menu {
 	padding: 8px 0;
 }
 
+.title-todo {
+	font-size: 30px;
+}
+
 .todo-text {
-	font-weight: 700;
-	font-size: 25px;
+	font-weight:600;
+	font-size: 22px;
 
 }
 .todo-button {
@@ -36,5 +40,8 @@ menu {
 	text-align: center;
 	background-color: cornflowerblue;
 	color: white;
+}
 
+.todo.done :first-child {
+	text-decoration: line-through;
 }

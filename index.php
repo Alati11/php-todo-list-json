@@ -16,15 +16,19 @@
         <main>
             <section>
                 <div class="container">
-                    <h1>{{ message }}</h1>
-                    <!-- <input type="text" v-model="newTodo" @keyup.enter="storeTodo"> -->
+                    <h1 class="title-todo">{{ message }}</h1>
+                </div>
+                <div class="container">
+                    <input v-model="newTodo" @keyup.enter="storeTodo" type="text" placeholder=" nuova todo" >
                 </div>
             </section>
 
             <section>
                 <div class="container">
                     <ul>
-                        <li  class=" todo"
+                        <li  class=" todo" :class="{
+                                done: todo.done
+                            }"
                             v-for="(todo ,i) in todos" :key="i">
                             <span class="todo-text">{{ todo.text }}</span>
                             <button class="todo-button">elimina</button>
