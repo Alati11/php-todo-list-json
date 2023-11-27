@@ -31,7 +31,7 @@
                             }"
                             v-for="(todo ,i) in todos" :key="i">
                             <span class="todo-text">{{ todo.text }}</span>
-                            <button class="todo-button">elimina</button>
+                            <button @click="destroyTodo(i)" class="todo-button">elimina </button>
                         </li>
                     </ul>
                  </div>

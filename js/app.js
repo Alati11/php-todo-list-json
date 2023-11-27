@@ -39,8 +39,7 @@ createApp({
 				todo: this.newTodo,
 			}
 
-			axios
-				.post('./store.php', data, {
+			axios.post('./store.php', data, {
 					headers: {
 						'Content-Type': 'multipart/form-data',
 					},
