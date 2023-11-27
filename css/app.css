@@ -19,10 +19,22 @@ menu {
 	list-style: none;
 }
 
-.done {
-	display: inline;
+.todo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 0;
 }
 
-.title-todo {
-	display: inline;
+.todo-text {
+	font-weight: 700;
+	font-size: 25px;
+
+}
+.todo-button {
+	padding: 10px;
+	text-align: center;
+	background-color: cornflowerblue;
+	color: white;
+
 }

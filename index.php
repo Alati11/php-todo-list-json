@@ -24,9 +24,10 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li v-for="(todo ,i) in todos" :key="i">
-                            <span>{{ todo.text }}</span>
-                            <button>elimina</button>
+                        <li  class=" todo"
+                            v-for="(todo ,i) in todos" :key="i">
+                            <span class="todo-text">{{ todo.text }}</span>
+                            <button class="todo-button">elimina</button>
                         </li>
                     </ul>
                  </div>
