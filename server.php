@@ -1,28 +1,6 @@
 <?php
 
-// $todos_json = file_get_contents('./todos.json'):
-$todos = [
-    [
-    'text' => 'HTML',
-    'done' => true
-    ],
-    [
-    'text' => 'CSS',
-    'done' => true
-    ],
-    [
-    'text' => 'JavaScript',
-    'done' => true
-    ],
-    [
-    'text' => 'PHP',
-    'done' => false
-    ],
-    [
-    'text' => 'Python',
-    'done' => false
-    ],
-    ];
+include __DIR__ . '/db.php';
 
 header('Content-Type: application/json');
 

@@ -13,6 +13,12 @@ section {
 	margin: 0 auto;
 }
 
+ul,
+ol,
+menu {	
+	list-style: none;
+}
+
 .done {
 	display: inline;
 }

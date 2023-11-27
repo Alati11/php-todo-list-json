@@ -4,14 +4,32 @@ createApp({
     data() {
         return {
             message: "Lista di cose da fare",
-            todos:[ ],  
+            // todos:[ ],  
+			todos : [
+				// {
+				// text:'HTML',
+				// done : true,
+				// },
+				// {
+				// text:'CSS',
+				// done : true,
+				// },
+				// {
+				// text:'JavaScript',
+				// done : true,
+				// },
+				// {
+				// text:'Python',
+				// done : false,
+				// },
+			],
         }
     },
     methods: {
 		fetchData() {
 			axios.get('./server.php').then((res) => {
-				// console.log(res.data.text)
-				this.todos = res.data.text  
+				console.log(res.data)
+				this.todos = res.data.results  
 			})
 		},
 	},
