@@ -8,6 +8,6 @@ $response = [
     'success' => true,
     'results' => $todos,
 ];
-echo json_encode ($todos);
+echo json_encode ($response);
 
 ?>

@@ -4,7 +4,6 @@ createApp({
     data() {
         return {
             message: "Lista di cose da fare",
-            // todos:[ ],  
 			todos : [
 				// {
 				// text:'HTML',
@@ -26,7 +25,7 @@ createApp({
         }
     },
     methods: {
-		fetchData() {
+		fetchTodos() {
 			axios.get('./server.php').then((res) => {
 				console.log(res.data)
 				this.todos = res.data.results  
@@ -34,7 +33,7 @@ createApp({
 		},
 	},
 	created() {
-		this.fetchData()
+		this.fetchTodos()
 	},
 
 }).mount('#app')

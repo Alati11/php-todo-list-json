@@ -24,18 +24,16 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li v-for="(todo, i) in todos" :key="i">
+                        <li v-for="(todo ,i) in todos" :key="i">
                             <span>{{ todo.text }}</span>
-                            <!-- <p class="done">{{ todo.done }}</p> -->
-                            <button> elimina</button>
+                            <button>elimina</button>
                         </li>
-                        
                     </ul>
                  </div>
             </section>
         </main>
     </div>
-    
+
     <script src="./js/app.js"></script>
 </body>
 </html>
